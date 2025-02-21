@@ -1,4 +1,6 @@
-@use 'hero';
+@use 'hero'; //Importação do arquivo hero (a imagem de fundo do cabeçalho).
+@use './components/infos_bar'; //Importação do arquivo info em subpasta (Informações do evento).
+@use './components/buttons'; //Importação do arquivo de botões em subpasta (Configuração geral de botões).
 
 * { //Reset css.
     margin: 0;
@@ -6,7 +8,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     color: #fff;
-
+    list-style: none;
 }
 
 .container{

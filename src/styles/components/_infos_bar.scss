@@ -1,0 +1,41 @@
+.infos-bar{ //Estilização da barra de informações do evento.
+    padding: 16px 24px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    &__infos{ //Alinhamento dos itens na mesma linha e espaçamento de 40px. 
+        display: flex;
+        gap: 40px;
+
+        &__item{ //Tamanho da fonte e sobrescrever a regra geral de cor das letras para preto.
+            font-size: 14px;
+            color: #000;
+
+            b{ //Título de cada item.
+                color: #000;
+                font-size: 18px;
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: 640px){ //Responsivo - Celualr.
+        display: block; //Muda o alinhamento para sequencial - um em baixo do outro.
+
+        &__infos{
+            display: block;
+
+            &__item{
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px){ //Responsivo - Tablet.
+        &__infos{ //Redução do espaço entre os itens.
+            gap: 16px;
+        }
+    }
+}

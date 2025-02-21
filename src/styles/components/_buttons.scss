@@ -1,0 +1,23 @@
+.button{
+    padding: 12px; //Estilização para botões genéricos.
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+
+    &--primary{ //Modificador - botão primário.
+        color: #fff;
+        background-color: #4f2ac3;
+    }
+
+    @media (max-width: 640px){ //Responsivo - Celular.
+        display: block;
+        width: 100%;
+    }
+
+    @media (max-width: 1024px){ //Responsivo - Tablet.
+        display: flex;
+        align-items: center;
+    }
+}
