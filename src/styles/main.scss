@@ -1,3 +1,24 @@
-body{
-    background-color: blue;
+@use 'hero';
+
+* { //Reset css.
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+
+}
+
+.container{
+    max-width: 960px; //O tamanho do container não pode passar dessa largura.
+    width: 100%;
+    margin: 0 auto; //Centralizar.
+
+    @media (max-width: 640px) { //Responsivo - Celular. 
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px){ //Responsivo - Tablet.
+        max-width: 90%;
+    }
 }

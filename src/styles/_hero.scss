@@ -1,0 +1,52 @@
+.hero{
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/fundo.png); //Imagem de fundo do começo da página.
+    background-repeat: no-repeat; //Repetição da imagem desativada.
+    background-size: cover; //Preencher todo o container.
+    position: relative;
+
+    .container{
+        position: relative; //Faz com que o conteúdo do container não seja afetado e continue visível.
+    }
+
+    &::before{ //Trecho para escurecer a imagem de fundo do _hero.
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: '';
+        opacity: 0.5;
+    }
+
+    &__text { //Estilização do texto.
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    &__logo { //Estilização da imagem de logo.
+        margin: 0 auto;
+        height: 80px;
+        display: block;
+    }
+
+    @media (max-width: 640px){ //Responsivo: Celular.
+        padding: 40px 0;
+
+        &__logo{
+            height: 40px; //Redução do tamanho da img de logo.
+        }
+
+        &__text{ //Redução do tamanho do texto.
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+}
