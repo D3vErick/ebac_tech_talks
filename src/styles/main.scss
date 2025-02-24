@@ -1,6 +1,7 @@
-@use 'hero'; //Importação do arquivo hero (a imagem de fundo do cabeçalho).
-@use './components/infos_bar'; //Importação do arquivo info em subpasta (Informações do evento).
-@use './components/buttons'; //Importação do arquivo de botões em subpasta (Configuração geral de botões).
+@use 'hero'; //Importação do arquivo de estilização de hero (a imagem de fundo do cabeçalho).
+@use './components/infos_bar'; //Importação do arquivo de estilização de info em subpasta (Informações do evento).
+@use './components/buttons'; //Importação do arquivo de estilização de botões em subpasta (Configuração geral de botões).
+@use 'event'; //Importação do arquivo de estilização da seção de eventos.
 
 * { //Reset css.
     margin: 0;

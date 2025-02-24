@@ -1,0 +1,41 @@
+.event{ //Estilização da seção de evento #1.
+    padding: 80px 0;
+    background-image: linear-gradient(#9c427a, #8b0480); //Degradê/Gradient de duas cores.
+
+    .container{ //Posiciona o texto do lado esquerdo e a imagem do lado direito.
+        display: flex;
+    }
+
+    &__image{ //Tamanho máximo da imagem.
+        max-width: 360px;
+    }
+
+    &__details{ //Espaçamento para distanciar o texto da imagem.
+        margin-right: 40px;
+
+        &__title{ //Título do evento.
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description{ //Descrição do evento.
+            line-height: 22px;
+        }
+    }
+
+    @media (max-width:640px){ //Responsivo: Celular.
+        .container{
+            display: block; //Altera a distribuíção para texto e imagem logo abaixo.
+        }
+
+        &__image{ //Imagem ocupa apenas o tamanho do container.
+            width: 100%;
+        }
+
+        &__details{ //Alteração do espaçamento do lado direto para o lado de baixo.
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+}
