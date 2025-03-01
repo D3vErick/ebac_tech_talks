@@ -2,13 +2,14 @@
 @use './components/infos_bar'; //Importação do arquivo de estilização de info em subpasta (Informações do evento).
 @use './components/buttons'; //Importação do arquivo de estilização de botões em subpasta (Configuração geral de botões).
 @use 'event'; //Importação do arquivo de estilização da seção de eventos.
+@use 'variables'; //Importação do arquivo de estilização de váriaveis. (Paleta de cores).
 
 * { //Reset css.
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    color: #fff;
+    color: variables.$textColor;
     list-style: none;
 }
 

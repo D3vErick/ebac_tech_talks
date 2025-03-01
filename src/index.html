@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>EBAC - Tech Talks</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC"><!--Imagem de fundo com visibilidade reduzida para ênfase no texto.-->
             <p class="hero__text"> <!--Título/contagem regressiva.-->
-                O maior evento de tecnologia do Brasil começa em 10D 12h 20m 15s
+                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
             </p>
             <div class="infos-bar"> <!--Informações do evento.-->
                 <ul class="infos-bar__infos">
@@ -38,8 +39,8 @@
         </div>
     </header> <!--Fim do cabeçalho.-->
 
-    <section class="event"> <!--Primeiro evento, informações incorretas apenas para placeholder.-->
-        <div class="container">
+    <section class="event event--frontend"> <!--Primeiro evento, informações incorretas apenas para placeholder.-->
+        <div class="container" data-aos="fade-right">
             <div class="event__details">
                 <h2 class="event__details__title">Front-End</h2>
                 <p class="event__details__description">Eu e casca de bala eu gosto assim amostradinho bora bill bora fi do bill bora muie do bill receba caneta azul azul caneta</p>
@@ -48,6 +49,37 @@
         </div>
     </section>
 
+    <section class="event event--ux-ui event--image-left"> <!--Segundo evento, informações incorretas apenas para placeholder.-->
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">UX/UI</h2>
+                <p class="event__details__description">EU QUERO PEGAR A MARIKAAAAAAAAAAAAAAAAAAAAA E A MIQUELAAAAAAAAAAAAAAAAAAA</p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="Front-End"> <!--Ilustração de um jogador assistindo Vínicius13-->
+        </div>
+    </section>
+
+    <section class="event event--data-science"> <!--Terceiro evento, informações incorretas apenas para placeholder.-->
+        <div class="container" data-aos="zoom-out">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">FIRE KEEPER THE BEST GIRL DE TODO O DARK SOULS 3 TO CERTO DATTEBAYOOOOOOOO</p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="Front-End"> <!--Ilustração de um jogador assistindo Vínicius13-->
+        </div>
+    </section>
+
+    <section class="event event--backend event--image-left"> <!--Quarto evento, informações incorretas apenas para placeholder.-->
+        <div class="container" data-aos="zoom-in">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-End</h2>
+                <p class="event__details__description">Se você odeia a Melina, VA SE F*** TA ME ENTENDENDO ELA SÓ NÃO É THE BEST GIRL PORQUE MIQUELA EXISTE</p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="Front-End"> <!--Ilustração de um jogador assistindo Vínicius13-->
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

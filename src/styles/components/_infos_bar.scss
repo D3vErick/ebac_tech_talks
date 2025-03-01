@@ -1,6 +1,8 @@
+@use '../variables';
+
 .infos-bar{ //Estilização da barra de informações do evento.
     padding: 16px 24px;
-    background-color: #fff;
+    background-color: variables.$textColor;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -11,10 +13,10 @@
 
         &__item{ //Tamanho da fonte e sobrescrever a regra geral de cor das letras para preto.
             font-size: 14px;
-            color: #000;
+            color: variables.$secondaryTextColor;
 
             b{ //Título de cada item.
-                color: #000;
+                color: variables.$secondaryTextColor;
                 font-size: 18px;
                 display: block;
             }

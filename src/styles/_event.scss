@@ -1,9 +1,35 @@
+@use 'variables';
+
 .event{ //Estilização da seção de evento #1.
     padding: 80px 0;
-    background-image: linear-gradient(#9c427a, #8b0480); //Degradê/Gradient de duas cores.
+
+
+    &--frontend{
+        background-image: linear-gradient(variables.$cor1, variables.$cor2); //Degradê/Gradient de duas cores.
+    }
+
+    &--ux-ui{
+        background-image: linear-gradient(variables.$cor2, variables.$cor3); //Degradê/Gradient de duas cores.
+    }
+
+    &--data-science{
+        background-image: linear-gradient(variables.$cor3, variables.$cor4); //Degradê/Gradient de duas cores.
+    }
+
+    &--backend{
+        background-image: linear-gradient(variables.$cor4, variables.$cor3); //Degradê/Gradient de duas cores.
+    }
+
+    &--image-left{ //Modificador que inverte a posição do texto e da imagem entre si.
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
+
 
     .container{ //Posiciona o texto do lado esquerdo e a imagem do lado direito.
         display: flex;
+        gap: 40px;
     }
 
     &__image{ //Tamanho máximo da imagem.
@@ -11,7 +37,6 @@
     }
 
     &__details{ //Espaçamento para distanciar o texto da imagem.
-        margin-right: 40px;
 
         &__title{ //Título do evento.
             font-size: 18px;

@@ -1,3 +1,5 @@
+@use '../variables';
+
 .button{
     padding: 12px; //Estilização para botões genéricos.
     font-size: 18px;
@@ -7,8 +9,8 @@
     white-space: nowrap;
 
     &--primary{ //Modificador - botão primário.
-        color: #fff;
-        background-color: #4f2ac3;
+        color: variables.$textColor;
+        background-color: variables.$tertiaryColor;
     }
 
     @media (max-width: 640px){ //Responsivo - Celular.
